@@ -1,0 +1,96 @@
+* {
+  Margin:0;
+  /* font-family: 'Inter', sans-serif; */
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgrey;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 1em;
+}
+
+nav {
+  width: 100%;
+  height: 13em;
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  box-shadow: 0 -1px 3px 2px black;
+  background-color: grey;
+  margin-bottom: 4em;
+}
+
+.nav-wrapper {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 15em;
+  margin: 2em;
+  font-size: 2em;
+  text-align: left;
+}
+
+.menu-logo-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  height: auto;
+  padding: .25em;
+  margin-right: 8em;
+}
+
+.drop-down-menu {
+  font-size: 2em;
+}
+
+.logo {
+  font-size: 9em
+}
+
+.intro-title {
+  font-size: 3em;
+  margin-left: .5em;
+  margin-top: 5em;
+  margin-bottom: .75em;
+}
+
+.card-display {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  grid-template-rows: repeat(3, 30em);
+  grid-auto-flow: dense;
+  grid-gap: .75em;
+  margin: 1em;
+  justify-content: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 -1px 3px 2px grey;
+  border-radius: .1em;
+}
+
+img {
+  width: 21.1em;
+  height: 12em;
+  justify-content: flex-start;
+}
+
+.visit-wrapper {
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.visits {
+  font-size: 1em;
+  font-weight: 300;
+  /* color: white; */
+}
