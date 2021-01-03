@@ -1,68 +1,142 @@
 * {
-  Margin:0;
+  Margin: 0em;
+  color: #ECF0F1;
   /* font-family: 'Inter', sans-serif; */
 }
 
 html {
   height: 100vh;
   width: 100vw;
-  background-color: lightgrey;
+  background-color: #EFEFEF;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  margin-bottom: 1em;
 }
 
-nav {
-  width: 100%;
-  height: 13em;
+.navigation-bar {
+  background-color: #373F47;
   position: fixed;
-  display: inline-block;
   top: 0;
-  box-shadow: 0 -1px 3px 2px black;
-  background-color: grey;
-  margin-bottom: 4em;
-}
-
-.nav-wrapper {
   display: flex;
-  position: fixed;
   justify-content: space-between;
-  width: 15em;
-  margin: 2em;
-  font-size: 2em;
-  text-align: left;
+  width: 100vw;
+  height: 10em;
+  left: 0;
+  z-index: 3;
+  box-shadow: 0 -1px 3px 2px grey;
 }
 
-.menu-logo-wrapper {
+.nav-icons {
   display: flex;
-  justify-content: flex-end;
-  width: auto;
-  height: auto;
-  padding: .25em;
-  margin-right: 8em;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-top: 5em;
+  padding: 0em;
+  width: 30em;
 }
 
-.drop-down-menu {
+.courses {
+  color: #4CAF50;
+}
+
+.option-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 1em;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 13em;
+  height: 13em;
+}
+
+.menu-options {
   font-size: 2em;
+  margin-top: .125em;
+}
+
+.dropdown-menu,
+.icons {
+  height: 2em;
+  width: 2em;
+  margin: .25em;
+  text-align: center;
+}
+
+.username {
+  font-size: 1em
+}
+
+.user {
+  margin-right: 1.5em;
+  align-items: center;
+  margin-bottom: 0em;
+}
+
+.drop,
+.profile {
+  height: 1em;
+  width: 1em;
+}
+
+.dropdown-menu {
+  display: inline-block;
+  width: auto;
+  align-items: baseline;
+  z-index: 2;
+}
+
+.drop:hover .dropdown-content {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: lightgrey;
+  cursor: pointer;
+  height: auto;
+  width: auto;
+  color: #708aa9;
+  border-bottom-right-radius: .25em;
+  border-bottom-left-radius: .25em;
+}
+
+.dropdown-item {
+  font-size: 1.25em;
+  padding: .35em;
+  border: none;
+}
+
+.dropdown-item:hover {
+  box-shadow: inset 0px 0px 4px
 }
 
 .logo {
-  font-size: 9em
+  height: 7em;
+  width: 7em;
+  margin-left: 4.5em;
+  margin-bottom: 4em;
 }
 
 .intro-title {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-left: .5em;
-  margin-top: 5em;
+  margin-top: 4.5em;
   margin-bottom: .75em;
+  color: #373F47;
 }
 
 .card-display {
   display: grid;
-  grid-template-columns: repeat(4, 24%);
+  grid-template-columns: repeat(4, 18.5em);
   grid-template-rows: repeat(3, 30em);
   grid-auto-flow: dense;
   grid-gap: .75em;
@@ -73,24 +147,83 @@ nav {
 .card-grid {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  box-shadow: 0 -1px 3px 2px grey;
+  background-color: #FFFFFF;
+  box-shadow: 0 -1px 3px 2px #DFE1E0;
   border-radius: .1em;
 }
 
-img {
-  width: 21.1em;
+.image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* filter: blur(1px); */
+  width: 18.5em;
   height: 12em;
-  justify-content: flex-start;
+}
+
+.cart {
+  height: 2.5em;
+  width: 2.5em;
+  margin-top: .5em;
+  margin-left: 1em;
 }
 
 .visit-wrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  color: #373F47;
+  width: 25%;
 }
 
 .visits {
-  font-size: 1em;
+  font-size: .75em;
   font-weight: 300;
-  /* color: white; */
+  margin-top: 1em;
+}
+
+.visit-count {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.visits,
+.visit-count {
+  color: #373F47;
+}
+
+/* BACKGROUND IMAGES */
+.flatirons {
+  background-image: url(./assets/images/flat.jpeg);
+}
+
+.ute {
+  background-image: url(./assets/images/ute.jpeg);
+}
+
+.sunset {
+  background-image: url(./assets/images/sunset.jpeg);
+}
+
+.omni {
+  background-image: url(./assets/images/omni.jpeg);
+}
+
+.coyote {
+  background-image: url(./assets/images/coyote.jpeg);
+}
+
+.national {
+  background-image: url(./assets/images/national.jpeg);
+}
+
+.copper {
+  background-image: url(./assets/images/copper.jpeg);
+}
+
+.breck {
+  background-image: url(./assets/images/breck.jpeg);
 }

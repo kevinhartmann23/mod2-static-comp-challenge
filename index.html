@@ -7,146 +7,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper">
-          <p>courses</p>
-          <p>caddy</p>
-          <p>score cards</p>
+    <nav class="navigation-bar">
+      <div class="nav-icons">
+        <div class="option-wrapper">
+          <img class="icons hole" src="./assets/icons/golf-hole.png" alt="courses">
+          <p class="menu-options courses">Courses</p>
+        </div>
+        <div class="option-wrapper">
+          <img class="icons bag" src="./assets/icons/golf-clubs.png" alt="bag">
+          <p class="menu-options">Bag</p>
+        </div>
+        <div class="option-wrapper">
+          <img class="icons ball" src="./assets/icons/golf-ball.png" alt="score card">
+          <p class="menu-options">Scores</p>
+        </div>
       </div>
-      <div class="menu-logo-wrapper">
-        <p class="drop-down-menu">username</p>
-        <p class="logo">⛳️</p>
+      <div class="menu-wrapper">
+        <!-- <div class="dropdown-menu"> -->
+          <div class="option-wrapper user">
+            <!-- <div class="dropdown-content">
+              <span class="dropdown-item" id="user-info">account</span>
+              <span class="dropdown-item" id="logout">logout</span>
+            </div> -->
+            <img class="icons profile" src="./assets/icons/user.png" alt="profile">
+            <p class="menu-options username">username</p>
+            <img class="icons drop" src="./assets/icons/dropdown.png" alt="menu">
+          </div>
+        <!-- </div> -->
+        <img class="logo" src="./assets/icons/logo.png" alt="courses">
       </div>
     </nav>
     <h2 class="intro-title">Courses</h2>
     <section class="card-display">
       <article class="card-grid">
         <section class="card">
-          <div class="visit-wrapper">
-            <h2 class="visits">VISITS</h2>
-            <h3 class="visit-count">9</h3>
+          <div class="image flatirons">
+            <img class="cart" src="./assets/icons/golf-cart.png" alt="book now">
+            <div class="visit-wrapper">
+              <h2 class="visits">VISITS</h2>
+              <h3 class="visit-count">09</h3>
+            </div>
           </div>
-          <img src="./assets/images/flat.jpeg" alt="Flatirons Golf Course">
-          <h4 class="location-title">course name:</h4>
-          <p class="location">Flatirons Golf Course</p>
-          <h4 class="address-title">address:</h4>
-          <p class="address">5706 Arapahoe Road<br>Boulder, CO 80301</p>
-          <h4 class="visit-title">last visit:</h4>
-          <p class="date">03/19/2019</p>
-          <h4 class="score-title">best score:</h4>
-          <p class="score">86</p>
+          <div class="location-wrapper">
+            <h4 class="location-title">course name:</h4>
+            <p class="location">Flatirons Golf Course</p>
+          </div>
+          <div class="address-wrapper">
+            <h4 class="address-title">address:</h4>
+            <p class="address">5706 Arapahoe Road<br>Boulder, CO 80301</p>
+          </div>
+          <div class="date-wrapper">
+            <h4 class="visit-title">last visit:</h4>
+            <p class="date">03/19/2019</p>
+          </div>
+          <div class="score-wrapper">
+            <h4 class="score-title">best score:</h4>
+            <p class="score">86</p>
+          </div>
       </article>
       <article class="card-grid">
         <section class="card">
-          <div class="visit-wrapper">
-            <h2 class="visits">VISITS</h2>
-            <h3 class="visit-count">4</h3>
+          <div class="image ute">
+            <img class="cart" src="./assets/icons/golf-cart.png" alt="book now">
+            <div class="visit-wrapper">
+              <h2 class="visits">VISITS</h2>
+              <h3 class="visit-count">04</h3>
+            </div>
           </div>
-          <img src="./assets/images/ute.jpeg" alt="Ute Creek Golf Course">
-          <h4 class="location-title">course name:</h4>
-          <p class="location">Ute Creek Golf Course</p>
-          <h4 class="address-title">address:</h4>
-          <p class="address">2000 Ute Creek Drive<br>Longmont, CO 80501</p>
-          <h4 class="visit-title">last visit:</h4>
-          <p class="date">07/23/2018</p>
-          <h4 class="score-title">best score:</h4>
-          <p class="score">90</p>
+          <div class="location-wrapper">
+            <h4 class="location-title">course name:</h4>
+            <p class="location">Ute Creek Golf Course</p>
+          </div>
+          <div class="address-wrapper">
+            <h4 class="address-title">address:</h4>
+            <p class="address">2000 Ute Creek Drive<br>Longmont, CO 80501</p>
+          <div class="date-title">
+            <h4 class="visit-title">last visit:</h4>
+            <p class="date">07/23/2018</p>
+          </div>
+          <div class="score-wrapper">
+            <h4 class="score-title">best score:</h4>
+            <p class="score">90</p>
+          </div>
       </article>
       <article class="card-grid">
         <section class="card">
-          <div class="visit-wrapper">
-            <h2 class="visits">VISITS</h2>
-            <h3 class="visit-count">31</h3>
+          <div class="image sunset">
+            <img class="cart" src="./assets/icons/golf-cart.png" alt="book now">
+            <div class="visit-wrapper">
+              <h2 class="visits">VISITS</h2>
+              <h3 class="visit-count">31</h3>
+            </div>
           </div>
-          <img src="./assets/images/sunset.jpeg" alt="">
-          <h4 class="location-title">course name:</h4>
-          <p class="location">Sunset Golf Course</p>
-          <h4 class="address-title">address:</h4>
-          <p class="address">1900 Longs Peak Avenue<br>Longmont, CO 80501</p>
-          <h4 class="visit-title">last visit:</h4>
-          <p class="date">04/20/2020</p>
-          <h4 class="score-title">best score:</h4>
-          <p class="score">35</p>
+          <div class="location-wrapper">
+            <h4 class="location-title">course name:</h4>
+            <p class="location">Sunset Golf Course</p>
+          </div>
+          <div class="address-wrapper">
+            <h4 class="address-title">address:</h4>
+            <p class="address">1900 Longs Peak Avenue<br>Longmont, CO 80501</p>
+          </div>
+          <div class="date-wrapper">
+            <h4 class="visit-title">last visit:</h4>
+            <p class="date">04/20/2020</p>
+          </div>
+          <div class="score-wrapper">
+            <h4 class="score-title">best score:</h4>
+            <p class="score">35</p>
+          </div>
       </article>
       <article class="card-grid">
         <section class="card">
-          <div class="visit-wrapper">
-            <h2 class="visits">VISITS</h2>
-            <h3 class="visit-count">18</h3>
+          <div class="image omni">
+            <img class="cart" src="./assets/icons/golf-cart.png" alt="book now">
+            <div class="visit-wrapper">
+              <h2 class="visits">VISITS</h2>
+              <h3 class="visit-count">18</h3>
+            </div>
           </div>
-          <img src="./assets/images/omni.jpeg" alt="Omni Interlocken Golf Club">
-          <h4 class="location-title">course name:</h4>
-          <p class="location">Omni Interlocken Golf Club</p>
-          <h4 class="address-title">address:</h4>
-          <p class="address">800 Eldorado Boulevard<br>Broomfeild, CO 80021</p>
-          <h4 class="visit-title">last visit:</h4>
-          <p class="date">08/21/2018</p>
-          <h4 class="score-title">best score:</h4>
-          <p class="score">84</p>
+          <div class="location-wrapper">
+            <h4 class="location-title">course name:</h4>
+            <p class="location">Omni Interlocken Golf Club</p>
+          </div>
+          <div class="address-wrapper">
+            <h4 class="address-title">address:</h4>
+            <p class="address">800 Eldorado Boulevard<br>Broomfeild, CO 80021</p>
+          </div>
+          <div class="date-wrapper">
+            <h4 class="visit-title">last visit:</h4>
+            <p class="date">08/21/2018</p>
+          </div>
+          <div class="score-wrapper">
+            <h4 class="score-title">best score:</h4>
+            <p class="score">84</p>
+          </div>
       </article>
       <article class="card-grid">
         <section class="card">
-          <div class="visit-wrapper">
-            <h2 class="visits">VISITS</h2>
-            <h3 class="visit-count">1</h3>
+          <div class="image coyote">
+            <img class="cart" src="./assets/icons/golf-cart.png" alt="book now">
+            <div class="visit-wrapper">
+              <h2 class="visits">VISITS</h2>
+              <h3 class="visit-count">01</h3>
+            </div>
           </div>
-          <img src="./assets/images/coyote.jpeg" alt="Coyote Creek Golf Course">
-          <h4 class="location-title">course name:</h4>
-          <p class="location">Coyote Creek Golf Course</p>
-          <h4 class="address-title">address:</h4>
-          <p class="address">222 Clubhouse Drive<br>Fort Lupton, CO 80621</p>
-          <h4 class="visit-title">last visit:</h4>
-          <p class="date">05/23/2020</p>
-          <h4 class="score-title">best score:</h4>
-          <p class="score">82</p>
+          <div class="location-wrapper">
+            <h4 class="location-title">course name:</h4>
+            <p class="location">Coyote Creek Golf Course</p>
+          </div>
+          <div class="address-wrapper">
+            <h4 class="address-title">address:</h4>
+            <p class="address">222 Clubhouse Drive<br>Fort Lupton, CO 80621</p>
+          </div>
+          <div class="date-wrapper">
+            <h4 class="visit-title">last visit:</h4>
+            <p class="date">05/23/2020</p>
+          </div>
+          <div class="score-wrapper">
+            <h4 class="score-title">best score:</h4>
+            <p class="score">82</p>
+          </div>
       </article>
       <article class="card-grid">
         <section class="card">
-          <div class="visit-wrapper">
-            <h2 class="visits">VISITS</h2>
-            <h3 class="visit-count">2</h3>
+          <div class="image national">
+            <img class="cart" src="./assets/icons/golf-cart.png" alt="book now">
+            <div class="visit-wrapper">
+              <h2 class="visits">VISITS</h2>
+              <h3 class="visit-count">02</h3>
+            </div>
           </div>
-          <img src="./assets/images/national.jpeg" alt="Colorado National Golf Club">
-          <h4 class="location-title">course name:</h4>
-          <p class="location">Colorado National Golf Club</p>
-          <h4 class="address-title">address:</h4>
-          <p class="address">2700 Vista Parkway<br>Erie, CO 80516</p>
-          <h4 class="visit-title">last visit:</h4>
-          <p class="date">07/15/2018</p>
-          <h4 class="score-title">best score:</h4>
-          <p class="score">84</p>
+          <div class="location-wrapper">
+            <h4 class="location-title">course name:</h4>
+            <p class="location">Colorado National Golf Club</p>
+          </div>
+          <div class="address-wrapper">
+            <h4 class="address-title">address:</h4>
+            <p class="address">2700 Vista Parkway<br>Erie, CO 80516</p>
+          </div>
+          <div class="date-wrapper">
+            <h4 class="visit-title">last visit:</h4>
+            <p class="date">07/15/2018</p>
+          </div>
+          <div class="score-wrapper">
+            <h4 class="score-title">best score:</h4>
+            <p class="score">84</p>
+          </div>
       </article>
       <article class="card-grid">
         <section class="card">
-          <div class="visit-wrapper">
-            <h2 class="visits">VISITS</h2>
-            <h3 class="visit-count">1</h3>
+          <div class="image copper">
+            <img class="cart" src="./assets/icons/golf-cart.png" alt="book now">
+            <div class="visit-wrapper">
+              <h2 class="visits">VISITS</h2>
+              <h3 class="visit-count">01</h3>
+            </div>
           </div>
-          <img src="./assets/images/copper.jpeg" alt="Copper Creek Golf Club">
-          <h4 class="location-title">course name:</h4>
-          <p class="location">Copper Creek Golf Club</p>
-          <h4 class="address-title">address:</h4>
-          <p class="address">104 Wheeler Place<br>Frisco, CO 80443</p>
-          <h4 class="visit-title">last visit:</h4>
-          <p class="date">09/11/2017</p>
-          <h4 class="score-title">best score:</h4>
-          <p class="score">92</p>
+          <div class="location-wrapper">
+            <h4 class="location-title">course name:</h4>
+            <p class="location">Copper Creek Golf Club</p>
+          </div>
+          <div class="address-wrapper">
+            <h4 class="address-title">address:</h4>
+            <p class="address">104 Wheeler Place<br>Frisco, CO 80443</p>
+          </div>
+          <div class="date-wrapper">
+            <h4 class="visit-title">last visit:</h4>
+            <p class="date">09/11/2017</p>
+          </div>
+          <div class="score-wrapper">
+            <h4 class="score-title">best score:</h4>
+            <p class="score">92</p>
+          </div>
       </article>
       <article class="card-grid">
         <section class="card">
-          <div class="visit-wrapper">
-            <h2 class="visits">VISITS</h2>
-            <h3 class="visit-count">6</h3>
+          <div class="image breck">
+            <img class="cart" src="./assets/icons/golf-cart.png" alt="book now">
+            <div class="visit-wrapper">
+              <h2 class="visits">VISITS</h2>
+              <h3 class="visit-count">06</h3>
+            </div>
           </div>
-          <img src="./assets/images/breck.jpeg" alt="Breckenridge Golf Club">
-          <h4 class="location-title">course name:</h4>
-          <p class="location">Breckenridge Golf Club</p>
-          <h4 class="address-title">address:</h4>
-          <p class="address">200 Clubhouse Drive<br>Breckenridge, CO 80424</p>
-          <h4 class="visit-title">last visit:</h4>
-          <p class="date">07/4/2019</p>
-          <h4 class="score-title">best score:</h4>
-          <p class="score">81</p>
+          <div class="location-wrapper">
+            <h4 class="location-title">course name:</h4>
+            <p class="location">Breckenridge Golf Club</p>
+          </div>
+          <div class="address-wrapper">
+            <h4 class="address-title">address:</h4>
+            <p class="address">200 Clubhouse Drive<br>Breckenridge, CO 80424</p>
+          </div>
+          <div class="date-wrapper">
+            <h4 class="visit-title">last visit:</h4>
+            <p class="date">07/4/2019</p>
+          </div>
+          <div class="score-wrapper">
+            <h4 class="score-title">best score:</h4>
+            <p class="score">81</p>
+          </div>
       </article>
     </section>
   </body>
