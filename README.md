@@ -7,11 +7,11 @@ https://kevinhartmann23.github.io/mod2-static-comp-challenge/
 ## About Project
 The task was to match a static comp provided, with creative freedom of images, color, icons, and font.
 
-!(static comp view)[./assets/readmeimgs/comp.png]
+![static comp view](./assets/readmeimgs/comp.png)
 
  I took my love of golf and went golf themed! Caddy is meant to allow a user to keep track of score cards, and the clubs they use per each hole. The page I built the static comp on, is an overview of each course that has been played.
 
-!(giphy)[https://media.giphy.com/media/5sQgc8P2us67CfeYqY/giphy.gif]
+![giphy](https://media.giphy.com/media/5sQgc8P2us67CfeYqY/giphy.gif)
 
 ### Functionality
 - Navigation Bar: Allows user to toggle between the course collection they have played, their bag, and their current score card.
@@ -19,11 +19,11 @@ The task was to match a static comp provided, with creative freedom of images, c
 
 ### Mobile Responsiveness
 Tablet
-!(tablet view)[./assets/readmeimgs/tablet.png]
+![tablet view](./assets/readmeimgs/tablet.png)
 - changed grid to two rows
 
 Mobile
-!(mobile view)[./assets/readmeimgs/mobile.png]
+![mobile view](./assets/readmeimgs/mobile.png)
 - changed grid view to 1 row
 - added a menu, and hide the reqular nav bar
 
