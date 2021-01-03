@@ -1,7 +1,6 @@
 * {
   Margin: 0em;
-  color: #ECF0F1;
-  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -15,6 +14,8 @@ body {
   width: 100vw;
 }
 
+/* NAVIGATION */
+
 .navigation-bar {
   background-color: #373F47;
   position: fixed;
@@ -24,8 +25,11 @@ body {
   width: 100vw;
   height: 10em;
   left: 0;
-  z-index: 3;
   box-shadow: 0 -1px 3px 2px grey;
+}
+
+.menu {
+  display: none;
 }
 
 .nav-icons {
@@ -46,6 +50,10 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   margin: 1em;
+}
+
+.option-wrapper {
+  cursor: pointer;
 }
 
 .menu-wrapper {
@@ -77,6 +85,7 @@ body {
   margin-right: 1.5em;
   align-items: center;
   margin-bottom: 0em;
+  margin-top: .25em;
 }
 
 .drop,
@@ -120,11 +129,13 @@ body {
 }
 
 .logo {
-  height: 7em;
-  width: 7em;
-  margin-left: 4.5em;
+  height: 9em;
+  width: 9em;
+  margin-left: 3em;
   margin-bottom: 4em;
 }
+
+/* CARD DISPLAY */
 
 .intro-title {
   font-size: 2.5em;
@@ -137,7 +148,7 @@ body {
 .card-display {
   display: grid;
   grid-template-columns: repeat(4, 18.5em);
-  grid-template-rows: repeat(3, 30em);
+  grid-template-rows: repeat(3, 28em);
   grid-auto-flow: dense;
   grid-gap: .75em;
   margin: 1em;
@@ -170,6 +181,10 @@ body {
   margin-left: 1em;
 }
 
+.cart:hover {
+  cursor: pointer;
+}
+
 .visit-wrapper {
   display: flex;
   flex-direction: column;
@@ -194,6 +209,71 @@ body {
 .visit-count {
   color: #373F47;
 }
+
+.location-wrapper,
+.address-wrapper,
+.date-wrapper,
+.score-wrapper {
+  margin-top: 1.5em;
+  margin-left: 2em;
+  font-size: .75em;
+}
+
+h4 {
+  margin-bottom: .25em;
+  color: #373F47;
+}
+
+
+.location-title {
+  font-size: 1.25em;
+}
+
+.location {
+  font-size: 1.5em;
+}
+
+.score {
+  color: #4CAF50;
+  margin-right: 2em;
+  margin-left: .25em;
+  font-weight: 600;
+}
+
+.score-title,
+.score {
+  font-size: 2em;
+  height: 1em;
+  margin-top: .5em;
+}
+
+.score-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 4em;
+  margin-left: 0em;
+  margin-top: 0em;
+}
+
+.address-wrapper {
+  background-color: #EFEFEF;
+  border-radius: .5em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  padding: .5em;
+}
+
+.share {
+  height: 4em;
+  width: 4em;
+  margin-right: .5em;
+}
+
+.share:hover {
+  cursor: pointer;
+}
+
 
 /* BACKGROUND IMAGES */
 .flatirons {
@@ -226,4 +306,68 @@ body {
 
 .breck {
   background-image: url(./assets/images/breck.jpeg);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+  .card-display {
+    grid-template-columns: repeat(5, 18.5em);
+    grid-template-rows: repeat(3, 28em);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card-display {
+    grid-template-columns: repeat(4, 18.5em);
+    grid-template-rows: repeat(3, 28em);
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .card-display {
+    grid-template-columns: repeat(3, 18.5em);
+    grid-template-rows: repeat(4, 28em);
+  }
+}
+
+@media screen and (max-width:900px) {
+  .card-display {
+    grid-template-columns: repeat(2, 18.5em);
+    grid-template-rows: repeat(6, 28em);
+  }
+}
+
+
+@media screen and (max-width:600px) {
+
+  .navigation-bar {
+    width: 100vw;
+    height: 5em;
+  }
+
+  .bag,
+  .score-card,
+  .logo,
+  .menu-wrapper {
+    display: none;
+  }
+
+  .nav-icons {
+    margin-top: .5em;
+  }
+
+  .menu {
+    display: initial;
+    margin-top: .75em;
+  }
+
+  .intro-title {
+    margin-top: 2.75em;
+  }
+
+  .card-display {
+    grid-template-columns: repeat(1, 18.5em);
+    grid-template-rows: repeat(10, 28.5em);
+  }
 }
